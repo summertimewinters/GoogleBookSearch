@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <EditText
+        android:id="@+id/input_books_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="139dp"
+        android:hint="Enter topic for books search"
+        android:iconifiedByDefault="false"
+        android:imeOptions="actionNext" />
+
+    <Button
+        android:id="@+id/book_search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_books_search"
+        android:layout_centerInParent="true"
+        android:onClick="booksDisplayClick"
+        android:text="Book Search" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="From Google Books API"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+        android:textStyle="italic" />
+
+</RelativeLayout>
